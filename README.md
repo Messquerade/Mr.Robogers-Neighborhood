@@ -61,5 +61,8 @@ Test: "Program returns a range of numbers from 0 to user input."
 Expect(playfulNumber(5).toEqual(["0, 1, 2, 3, 4, 5"]));
 
 Test: "Program replaces 1, 2, and 3 in range of returned numbers."
+Expect(playfulNumber(5).toEqual(["0, Beep!, Boop!, Won't you be my neighbor?, 4, 5"]));
+
+
 
 
