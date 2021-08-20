@@ -1,8 +1,9 @@
+// Business Logic
+
 function playfulNumber(number) {
   if (number === 0) {
     return "0";
   };
-
   const stringNumber = number.toString();
   let playfulArray = []
   for (const character of stringNumber) {
@@ -29,3 +30,15 @@ function playfulNumber(number) {
     };
   };
 };
+
+// UI Logic
+
+$(document).ready(function() {
+  $("#form1").submit(function(event) {
+    event.preventDefault();
+    const inputNumber = parseInt($("#number").val());
+    const result = playfulNumber(inputNumber);
+    $("#result").html(result);
+
+  });
+});
