@@ -37,22 +37,20 @@ $(document).ready(function() {
   $("#form1").submit(function(event) {
     event.preventDefault();
     const inputNumber = parseInt($("#number").val());
-    if (inputNumber) {
-      console.log("Is this running?");
+    if (isNaN(inputNumber)) {
       $("#result").text("Please enter a number!");
     } else {
-      console.log(inputNumber);
       const result = playfulNumber(inputNumber);
       $("#result").html(result);
     };
   });
   
   $("button#Hint").click(function() {
-    $("#hint").toggle();
+    $("#hint").slideToggle();
     $("#answer").hide();
   });
   $("button#Answer").click(function() {
-    $("#answer").toggle();
+    $("#answer").slideToggle();
     $("#hint").hide();
   });
 });
