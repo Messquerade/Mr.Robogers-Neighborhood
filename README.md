@@ -48,4 +48,6 @@ Describe: playfulNumber()
 Test: "If the user input is 0, then it should return a string of "0"."
 Expect(playfulNumber(0).toEqual([0]));
 
-Test: "If the 
+Test: "If the user input contains a 3, the program should return "Won't you be my neighbor?"
+Expect(playfulNumber(3).toEqual(["Won't you be my neighbor?"]));
+
