@@ -39,6 +39,5 @@ $(document).ready(function() {
     const inputNumber = parseInt($("#number").val());
     const result = playfulNumber(inputNumber);
     $("#result").html(result);
-
   });
 });
