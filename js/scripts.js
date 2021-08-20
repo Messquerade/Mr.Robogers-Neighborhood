@@ -37,8 +37,14 @@ $(document).ready(function() {
   $("#form1").submit(function(event) {
     event.preventDefault();
     const inputNumber = parseInt($("#number").val());
-    const result = playfulNumber(inputNumber);
-    $("#result").html(result);
+    if (inputNumber) {
+      console.log("Is this running?");
+      $("#result").text("Please enter a number!");
+    } else {
+      console.log(inputNumber);
+      const result = playfulNumber(inputNumber);
+      $("#result").html(result);
+    };
   });
   
   $("button#Hint").click(function() {
