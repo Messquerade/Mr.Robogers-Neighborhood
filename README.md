@@ -49,5 +49,11 @@ Test: "If the user input is 0, then it should return a string of "0"."
 Expect(playfulNumber(0).toEqual([0]));
 
 Test: "If the user input contains a 3, the program should return "Won't you be my neighbor?"
-Expect(playfulNumber(3).toEqual(["Won't you be my neighbor?"]));
+Expect(playfulNumber(23).toEqual(["Won't you be my neighbor?"]));
+
+Test: "If user input contains a 2, the program should return "Boop!"
+Expect(playfulNumber(42).toEqual(["Boop!"]));
+
+Test: "If user input contains a 1, the program should return "Beep!"
+Expect(playfulNumber(601).toEqual(["Beep!"]));
 
