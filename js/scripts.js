@@ -19,16 +19,15 @@ function playfulNumber(number) {
   for (const character of stringNumber) {
     if (character === "1") {
       return "Beep!";
-    } else {
-      for (let i = 0; i <= number; i ++) {
-        playfulArray.push(i);
-      };
-      playfulArray[1] = "Beep!";
-      playfulArray[2] = "Boop!";
-      playfulArray[3] = "Won't you be my neighbor?";
-      return playfulArray.join(", ");
     };
   };
+  for (let i = 0; i <= number; i ++) {
+    playfulArray.push(i);
+  };
+  playfulArray[1] = "Beep!";
+  playfulArray[2] = "Boop!";
+  playfulArray[3] = "Won't you be my neighbor?";
+  return playfulArray.join(", ");
 };
 
 // UI Logic
@@ -41,7 +40,7 @@ $(document).ready(function() {
       $("#result").text("Please enter a number!");
     } else {
       const result = playfulNumber(inputNumber);
-      $("#result").html(result);
+      $("#result").text(result);
     };
   });
   
