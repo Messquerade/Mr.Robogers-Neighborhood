@@ -3,7 +3,8 @@ function playfulNumber(number) {
     return "0";
   };
 
-  let stringNumber = number.toString();
+  const stringNumber = number.toString();
+  let playfulArray = []
   for (const character of stringNumber) {
     if (character === "3") {
       return "Won't you be my neighbor?";
@@ -11,6 +12,12 @@ function playfulNumber(number) {
       return "Boop!";
     } else if (character === "1") {
       return "Beep!";
+    } else {
+      for (let i = 0; i <= number; i ++) {
+        console.log(i)
+        playfulArray.push(i);
+      };
+      return playfulArray.join(", ");
     };
   };
 };

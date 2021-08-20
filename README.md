@@ -57,3 +57,9 @@ Expect(playfulNumber(42).toEqual(["Boop!"]));
 Test: "If user input contains a 1, the program should return "Beep!"
 Expect(playfulNumber(601).toEqual(["Beep!"]));
 
+Test: "Program returns a range of numbers from 0 to user input."
+Expect(playfulNumber(5).toEqual(["0, 1, 2, 3, 4, 5"]));
+
+Test: "Program replaces 1, 2, and 3 in range of returned numbers."
+
+
