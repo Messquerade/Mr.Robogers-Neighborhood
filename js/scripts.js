@@ -40,4 +40,8 @@ $(document).ready(function() {
     const result = playfulNumber(inputNumber);
     $("#result").html(result);
   });
+  
+  $("button#hint").click(function() {
+    $("#hint").toggle();
+  })
 });

@@ -1,6 +1,6 @@
 # _{Mr. Roboger's Neighborhood}_
 
-#### _{Brief description of application}_
+#### _This website displays different messages depending on user input of different numbers._
 
 #### By _**{Anna Clarke}**_
 
@@ -14,7 +14,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_{This website welcomes users to Mr.Roboger's neighborhood and asks them to input a number. Depending on the user's number choice, the website will display Beep!, Boop!, Won't you be my neighbor?, or a range of numbers. }_
 
 ## Setup/Installation Requirements
 
