@@ -41,7 +41,12 @@ $(document).ready(function() {
     $("#result").html(result);
   });
   
-  $("button#hint").click(function() {
+  $("button#Hint").click(function() {
     $("#hint").toggle();
-  })
+    $("#answer").hide();
+  });
+  $("button#Answer").click(function() {
+    $("#answer").toggle();
+    $("#hint").hide();
+  });
 });
