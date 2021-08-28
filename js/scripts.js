@@ -1,6 +1,6 @@
 // Business Logic
 
-function playfulNumber(number) {
+function playfulRange(number) {
   if (number === 0) {
     return "0";
   };
@@ -39,7 +39,7 @@ $(document).ready(function() {
     if (isNaN(inputNumber)) {
       $("#result").text("Please enter a number!");
     } else {
-      const result = playfulNumber(inputNumber);
+      const result = playfulRange(inputNumber);
       $("#result").text(result);
     };
   });
