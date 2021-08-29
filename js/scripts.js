@@ -32,13 +32,4 @@ $(document).ready(function() {
       $("#result").text(result);
     };
   });
-  
-  $("button#Hint").click(function() {
-    $("#hint").slideToggle();
-    $("#answer").hide();
-  });
-  $("button#Answer").click(function() {
-    $("#answer").slideToggle();
-    $("#hint").hide();
-  });
 });
