@@ -7,16 +7,15 @@ function playfulRange(number) {
   playfulArray = []
   for (let i = 0; i <= number; i++) {
     let playfulNumber = i.toString();
-    console.log(playfulNumber)
-    if (playfulNumber.includes("1")) {
-      playfulNumber = "Beep!"
+    if (playfulNumber.includes("3")) {
+      playfulNumber = "Won't you be my neighbor?"
     } else if (playfulNumber.includes("2")) {
-      playfulNumber = "Boop!";
-    } else if (playfulNumber.includes("3")) {
-      playfulNumber = "Won't you be my neighbor?";
+      playfulNumber = "Boop!"
+    } else if (playfulNumber.includes("1")) {
+      playfulNumber = "Beep!"
     }
     playfulArray.push(playfulNumber);
-  }
+  };
   return playfulArray.join(", ");
 };
 
